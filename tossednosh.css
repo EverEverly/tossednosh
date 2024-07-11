@@ -73,7 +73,7 @@ section {
 
 .recipe h3, .tip h3 {
     margin-top: 0;
-    color: #ff69b4; /* Hot Pink */
+    color:rgb(20, 1, 56); /* Dark Blue */
     font-weight: 700; /* Bolder font weight for headings */
 }
 
