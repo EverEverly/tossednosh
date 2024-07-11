@@ -398,3 +398,46 @@ h1, h2, h3, h4, h5, h6 {
     background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  
     box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
 }
+
+/* Recipe Grid Styling */
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #e6f7ff; /* Light Cyan */
+}
+
+.recipe {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.recipe:hover {
+    transform: scale(1.05); /* Increased scale for hover effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow for hover effect */
+}
+
+.recipe h3 {
+    margin-top: 0;
+    color: rgb(20, 1, 56); /* Dark Blue */
+    font-weight: 700; /* Bolder font weight for headings */
+}
+
+.recipe img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recipe p {
+    color: #555; /* Slightly darker text color for better contrast */
+}
