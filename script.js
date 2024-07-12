@@ -55,7 +55,7 @@ document.getElementById('zip-form').addEventListener('submit', function(event) {
 
 function fetchStores(zipCode) {
     const apiKey = 'AIzaSyBEEDGAc9ryRIzPiiNXjlD3MPgBOW13JoI'; // Place your API key here
-    const apiUrl = `https://apigateway.googleapis.co/stores?zip=${zipCode}&api_key=${apiKey}`; // API key included in URL
+    const apiUrl = `https://apigateway.googleapis.com/stores?zip=${zipCode}&api_key=${apiKey}`; // API key included in URL
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => displayStores(data.stores))
