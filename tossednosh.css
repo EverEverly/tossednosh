@@ -441,3 +441,95 @@ h1, h2, h3, h4, h5, h6 {
 .recipe p {
     color: #555; /* Slightly darker text color for better contrast */
 }
+/* Store Search Form Styling */
+#stores {
+    padding: 20px;
+    background-color: #e6f7ff; /* Light Cyan */
+}
+
+#zip-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#zip-form label {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+#zip-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+#zip-form button {
+    padding: 10px 20px;
+    background-color: #ff69b4; /* Hot Pink */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#zip-form button:hover {
+    background-color: #e5533d;
+    transform: scale(1.05);
+}
+
+/* Store Results Styling */
+#store-results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.store-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: calc(50% - 20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.store-item h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.store-item p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.store-item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff69b4; /* Hot Pink */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.store-item a:hover {
+    background-color: #e5533d;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .store-item {
+        width: calc(100% - 20px);
+    }
+}
+
